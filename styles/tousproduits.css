@@ -9,6 +9,38 @@ body {
     overflow-x: hidden;
 }
 
+/* debut nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ececec;
+    height: 90px;
+}
+
+.logo {
+    font-size: 50px;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.onglet ul li {
+    padding-right: 10%;
+    font-size: 30px;
+}
+
+.onglet ul {
+    display: flex;
+    list-style: none;
+    margin-right: 120px;
+    margin-top: 9%;
+    color: #eb8f02;
+}
+
+span {
+    color: #eb8f02;
+}
+
+/* fin nav bar */
 
 /* recherche */
 
