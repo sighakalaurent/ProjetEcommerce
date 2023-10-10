@@ -153,3 +153,82 @@ h1 {
   font-weight: bold;
 }
 /* fin section nos produits */
+
+/* debut footer */
+footer {
+    margin-top: 72px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 114px;
+}
+
+footer .logos {
+    text-align: center;
+    font-size: 27px;
+    line-height: 1;
+    margin-left: -10%;
+}
+
+footer span {
+    color: #EB8F02;
+}
+
+
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+    padding: 41px 15px;
+}
+
+.contactphone {
+    align-items: center;
+    display: flex;
+    margin-left: 3%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-right: 1%;
+    margin-left: -4%;
+}
+
+.contact1 {
+    align-self: center;
+    display: flex;
+    margin-left: 10px;
+}
+
+.contactlogo img {
+    width: 25px;
+    margin-left: -17%;
+}
+
+.contact .contact1 span {
+    color: white;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.contact .contact2 span {
+    color: white;
+    font-size: 25px;
+
+    margin: 15px;
+}
+
+.icone img {
+    width: 25px;
+    margin-left: 15px;
+}
+
+.contactphone .contactlogo {
+    margin-left: 1%;
+
+}
+/* fin footer */

@@ -175,7 +175,7 @@ footer span {
 .logo {
     display: flex;
     justify-content: space-between;
-    color: white;
+
     align-items: center;
     padding: 41px 15px;
 }
