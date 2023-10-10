@@ -17,6 +17,11 @@ nav {
     height: 90px;
 }
 
+#liens{
+    text-decoration: none;
+    padding-right: 10%;
+    color: #eb8f02;
+}
 .logo {
     font-size: 50px;
     margin-left: 3%;
