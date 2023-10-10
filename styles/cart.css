@@ -13,6 +13,7 @@ nav {
   justify-content: space-between;
   background-color: #ececec;
   height: 90px;
+  align-items: center;
 }
 #liens{
   text-decoration: none;

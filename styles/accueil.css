@@ -13,6 +13,7 @@ nav {
   justify-content: space-between;
   background-color: #ececec;
   height: 90px;
+  align-items: center;
 }
 #liens{
     text-decoration: none;
@@ -42,7 +43,6 @@ span {
 .accueil {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .text_accueil {
   margin-top: 8%;
