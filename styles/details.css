@@ -1,3 +1,43 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../asset/fonts/Poppins-Regular.ttf);
+  }
+     
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  /* debut nav bar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ececec;
+    height: 90px;
+  }
+  .logo {
+    font-size: 50px;
+    margin-left: 3%;
+    margin-top: 1%;
+  }
+  .onglet ul li {
+    padding-right: 10%;
+    font-size: 30px;
+  }
+  .onglet ul {
+    display: flex;
+    list-style: none;
+    margin-right: 120px;
+    margin-top: 9%;
+    color: #eb8f02;
+  }
+  span {
+    color: #eb8f02;
+  }
+  /* fin nav bar */
+
+
+
+
 .container_details{
     display: flex;
     justify-content: center;
@@ -85,4 +125,81 @@ input:nth-child(2){
     text-align: center;
     opacity: 0.8;
     font-size: 14px;
+}
+
+
+/* footer */
+
+
+footer {
+    margin-top: 72px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 114px;
+}
+
+footer .logos {
+    text-align: center;
+    font-size: 27px;
+    line-height: 1;
+}
+
+footer span {
+    color: #EB8F02;
+}
+
+
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 41px 15px;
+}
+
+.contactphone {
+    align-items: center;
+    display: flex;
+    margin-left: 3%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.contact1 {
+    align-self: center;
+    display: flex;
+    margin-left: 10px;
+}
+
+.contactlogo img {
+    width: 25px;
+    margin-left: -17%;
+}
+
+.contact .contact1 span {
+    color: white;
+    margin: 15px;
+}
+
+.contact .contact2 span {
+    color: white;
+
+    margin: 15px;
+}
+
+.icone img {
+    width: 25px;
+    margin-left: 15px;
+}
+
+.contactphone .contactlogo {
+    margin-left: 1%;
+
 }
