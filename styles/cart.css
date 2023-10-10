@@ -27,6 +27,12 @@
   font-weight: bold;
   padding-top: 10px;
 }
+span img{
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+  margin-left: 15px;
+}
 .category_products {
   font-size: 12px;
   font-weight: bold;
