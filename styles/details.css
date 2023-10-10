@@ -149,6 +149,7 @@ footer .logos {
     text-align: center;
     font-size: 27px;
     line-height: 1;
+    margin-left: -10%;
 }
 
 footer span {
@@ -160,7 +161,7 @@ footer span {
 .logo {
     display: flex;
     justify-content: space-between;
-    color: white;
+
     align-items: center;
     padding: 41px 15px;
 }
@@ -174,8 +175,9 @@ footer span {
 .contact {
     display: flex;
     align-items: center;
-
-
+    font-size: 25px;
+    margin-right: 1%;
+    margin-left: -4%;
 }
 
 .contact1 {
@@ -192,10 +194,12 @@ footer span {
 .contact .contact1 span {
     color: white;
     margin: 15px;
+    font-size: 25px;
 }
 
 .contact .contact2 span {
     color: white;
+    font-size: 25px;
 
     margin: 15px;
 }
@@ -209,3 +213,6 @@ footer span {
     margin-left: 1%;
 
 }
+
+
+
