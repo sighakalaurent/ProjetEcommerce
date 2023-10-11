@@ -156,7 +156,8 @@ label {
   transition: 1.1s;
 }
 .btn_commandez input:hover {
-  background-color: #c57701;
+  background-color: #eb8f02;
+    opacity: 0.8;
 }
 
 /* footer */
