@@ -1,0 +1,106 @@
+[
+    {
+    "id":1,
+    "nom": "Chariot de service",
+    "categorie":"Ameublement",
+    "prix":200.000 ,
+    "details":"chariot de service en vitre compose de 3 compartiments:2 en stock disponibles",
+    "image": "images__4_-removebg-preview 1.png"
+    },
+    {
+        "id":2,
+        "nom": "pendule de decoration",
+        "categorie":"Decoration",
+        "prix":70.000,
+        "details":"faits en porcelaine:4 disponible en stocks",
+        "image":"1293238f0f697b0449da83e1f68dbeb1-removebg-preview 1.png"
+
+    },
+    {
+        "id":3,
+        "nom": "thermos",
+        "categorie":"vaisselles",
+        "prix":20.000,
+        "details":"10 litres de contenance:1 disponible en stock",
+        "image":"2000-ml-flacon-vide-bouteille-d-eau-isol-fiole-en-acier-inoxydable-thermique-Portable-grande-capacit-removebg-preview 1.png"
+
+    },
+    {
+        "id":4,
+        "nom": "salle a manger",
+        "categorie":"Ameublement",
+        "prix":500.000,
+        "details":"salle a manger 6 places faits en marbre:1 disponible en stock",
+        "image":"H329dcdc0b6b746a4a0782d868353ab8fj-removebg-preview 1.png"
+
+    },
+    {
+        "id":5,
+        "nom": "Chaise de bureau",
+        "categorie":"Ameublement",
+        "prix":35.000,
+        "details":"Chaise de bureau conviviable pour votre lieu de service (salon de coiffure,bar) de couleur grise :1 disponible en stock",
+        "image":"tokyo-cuir-veritable-removebg-preview 1.png"
+    },
+    {
+        "id":6,
+        "nom": "Tableau decoratif",
+        "categorie":"Decoration",
+        "prix":10.000,
+        "details":"tableau faite en toile :5 disponible en stocks",
+        "image":"images2.png"
+
+    },
+    {
+        "id":7,
+        "nom": "Cafetiere",
+        "categorie":"vaisselles",
+        "prix":30.000,
+        "details":"de marque silver crest,8 litres de contenance:5 disponible en stocks",
+        "image":"images3.png"
+
+    },
+    {
+        "id":8,
+        "nom": "Jeu de trio",
+        "categorie":"Decoration",
+        "prix":35.000,
+        "details":"rendez votre salle de sejour agreable avec ce jeu de trio:1 disponible en stock",
+        "image":"images4.png"
+
+    },
+    {
+        "id":9,
+        "nom": "Pendule",
+        "categorie":"Decoration",
+        "prix":60.000,
+        "details":"pendule de decoration couleur Or:1 disponible en stock",
+        "image":"10195159875634-removebg-preview 1.png"
+    },
+    {
+        "id":10,
+        "nom": "Machine a pop corn",
+        "categorie":"vaisselles",
+        "prix":12.000,
+        "details":"machine a pop corn sans usage d huile raffine:3 disponible en stock",
+        "image":"41ksMeD02US._SL500_-removebg-preview.png"
+
+    },
+    {
+        "id":11,
+        "nom": "Machine a creme",
+        "categorie":"vaisselles",
+        "prix":22.000,
+        "details":"Pour faire vos creme maison c est plus un soucis avec cette appareil:1 disponible en stock",
+        "image":"H18e34f98908246cb892d19e761ac8e5fE-removebg-preview.png"
+
+    },
+    {
+        "id":12,
+        "nom": "Bateuse Electrique ",
+        "categorie":"vaisselles",
+        "prix":62.000,
+        "details":"la patiserie en quelaue minute avec cette appareils:2 disponible en stock",
+        "image":"H9a7250b3cce6489f9ca5a178a0402496W-removebg-preview.png"
+    }
+]
