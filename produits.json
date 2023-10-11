@@ -5,7 +5,7 @@
     "categorie":"Ameublement",
     "prix":200.000 ,
     "details":"chariot de service en vitre compose de 3 compartiments:2 en stock disponibles",
-    "image": "images__4_-removebg-preview 1.png"
+    "image": "image5.png"
     },
     {
         "id":2,
@@ -13,7 +13,7 @@
         "categorie":"Decoration",
         "prix":70.000,
         "details":"faits en porcelaine:4 disponible en stocks",
-        "image":"1293238f0f697b0449da83e1f68dbeb1-removebg-preview 1.png"
+        "image":"images10.png"
 
     },
     {
@@ -22,7 +22,7 @@
         "categorie":"vaisselles",
         "prix":20.000,
         "details":"10 litres de contenance:1 disponible en stock",
-        "image":"2000-ml-flacon-vide-bouteille-d-eau-isol-fiole-en-acier-inoxydable-thermique-Portable-grande-capacit-removebg-preview 1.png"
+        "image":"images8.png"
 
     },
     {
@@ -31,7 +31,7 @@
         "categorie":"Ameublement",
         "prix":500.000,
         "details":"salle a manger 6 places faits en marbre:1 disponible en stock",
-        "image":"H329dcdc0b6b746a4a0782d868353ab8fj-removebg-preview 1.png"
+        "image":"images4.png"
 
     },
     {
@@ -40,7 +40,7 @@
         "categorie":"Ameublement",
         "prix":35.000,
         "details":"Chaise de bureau conviviable pour votre lieu de service (salon de coiffure,bar) de couleur grise :1 disponible en stock",
-        "image":"tokyo-cuir-veritable-removebg-preview 1.png"
+        "image":"images8.png"
     },
     {
         "id":6,
@@ -75,7 +75,7 @@
         "categorie":"Decoration",
         "prix":60.000,
         "details":"pendule de decoration couleur Or:1 disponible en stock",
-        "image":"10195159875634-removebg-preview 1.png"
+        "image":"images8.png"
     },
     {
         "id":10,
