@@ -17,11 +17,6 @@ nav {
     height: 90px;
 }
 
-#liens{
-    text-decoration: none;
-    padding-right: 10%;
-    color: #eb8f02;
-}
 .logo {
     font-size: 50px;
     margin-left: 3%;
@@ -175,7 +170,7 @@ footer span {
 .logo {
     display: flex;
     justify-content: space-between;
-
+    color: white;
     align-items: center;
     padding: 41px 15px;
 }
