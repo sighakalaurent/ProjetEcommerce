@@ -121,7 +121,8 @@ input:nth-child(2){
     
 }
 .btn_cart input:hover{
-    background-color: #c57701;
+    background-color: #eb8f02;
+    opacity: 0.8;
 }
 .details{
     width: 70%;
