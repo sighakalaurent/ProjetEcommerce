@@ -42,7 +42,6 @@ span {
 .accueil {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .text_accueil {
   margin-top: 8%;
