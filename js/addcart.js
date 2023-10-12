@@ -59,5 +59,9 @@
    }
    return total
  }
-
+ 
+ let productId = sessionStorage.getItem("productId")
+ showDetail(productId);
+ 
+ 
 
