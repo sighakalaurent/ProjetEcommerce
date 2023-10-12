@@ -27,9 +27,10 @@ nav {
 
 .logos p{
     font-size: 50px;
-    margin-left: 3%;
+    margin-left: 20%;
     margin-top: 1%;
     color: black;
+
 
 }
 
@@ -67,13 +68,10 @@ span {
 
 .search button {
     padding: 15px 0;
-    width: 5%;
     border-radius: 15px;
     background-color: #EB8F02;
     border: aliceblue;
     color: white;
-
-
 }
 
 .categorie {
@@ -81,6 +79,7 @@ span {
     display: flex;
     justify-content: space-evenly;
     width: 96%;
+    margin-left: 5%;
 }
 
 .categorie .categorielist {
@@ -88,11 +87,13 @@ span {
 }
 
 .categorielist button {
-    padding: 30% 100%;
+    padding: 20px 51px;
     border-radius: 12px;
     background-color: #EB8F02;
     border: aliceblue;
     color: white;
+    cursor: pointer;
+
 
 }
 
@@ -178,7 +179,7 @@ footer span {
     justify-content: space-around;
 
     align-items: center;
-    padding: 41px 15px;
+    padding: 35px 0;
 }
 
 .contactphone {

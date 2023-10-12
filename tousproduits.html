@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produits</title>
     <link rel="stylesheet" href="styles/tousproduits.css">
-    <script src="./js/tousproduits.js"></script>
+    <script src="./js/tousproduits.js" defer></script>
 </head>
 
 <body>
@@ -33,16 +33,16 @@
         </nav>
     </header>
     <!--FIN NAV BAR-->
-    <!--  -->
+    <!-- search -->
     <section class="search">
-        <input type="search" id="site-search" name="produit" placeholder="Recherche Produit" />
+        <input type="search" id="search" name="produit" placeholder="Recherche Produit" />
         <button>Search</button>
     </section>
 
     <div class="categorie">
 
         <div class="categorielist">
-            <button>TousProduits</button>
+            <button id="boutontous">Tous</button>
         </div>
 
         <div class="categorielist">
@@ -58,9 +58,12 @@
         </div>
 
     </div>
+    <!-- fin search -->
+    
+    <!-- Produits -->
 
     <div class="tousProduits">
-        <div class="produits">
+        <!-- <div class="produits">
             <div class="image"> <img src="../asset/img/images1.png" alt="">
             </div>
             <div class="p1">
@@ -194,9 +197,11 @@
             </div>
 
             <div class="btn"><button>Ajoute au Panier</button></div>
-        </div>
+        </div> -->
     </div>
 
+
+    <!-- start footer -->
 
     <footer>
         <p class="logos">Wanda <span>Shop</span></p>
@@ -241,6 +246,7 @@
         </div>
 
     </footer>
+    <!-- End footer -->
 </body>
 
 </html>
