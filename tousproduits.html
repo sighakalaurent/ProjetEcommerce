@@ -6,19 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produits</title>
     <link rel="stylesheet" href="styles/tousproduits.css">
+    <script src="./js/tousproduits.js"></script>
 </head>
 
 <body>
 
-     <!--DEBUT NAV BAR-->
-     <header>
+    <!--DEBUT NAV BAR-->
+    <header>
         <nav>
-            <div class="logo">Wanda<span>Shop</span></div>
+            <div class="logos">
+                <p>Wanda<span>Shop</span></p>
+            </div>
             <div class="onglet">
                 <ul>
-                    <a id="liens" href="index.html"><li>Accueil</li></a>
-                   <a id="liens" href="tousproduits.html"><li>Produits</li></a>
-                   <a href="cart.html"><li><img src="asset/icons/iconeproduits/basket.svg" alt="Panier"></li></a>
+                    <a id="liens" href="index.html">
+                        <li>Accueil</li>
+                    </a>
+                    <a id="liens" href="tousproduits.html">
+                        <li>Produits</li>
+                    </a>
+                    <a href="cart.html">
+                        <li><img src="asset/icons/iconeproduits/basket.svg" alt="Panier"></li>
+                    </a>
                 </ul>
             </div>
         </nav>
@@ -52,7 +61,7 @@
 
     <div class="tousProduits">
         <div class="produits">
-            <div class="image"> <img src="../asset/img/improduits/images1.png" alt="">
+            <div class="image"> <img src="../asset/img/images1.png" alt="">
             </div>
             <div class="p1">
                 <p>Salon</p>
@@ -67,7 +76,7 @@
             <div class="btn"><button>Ajoute au Panier</button></div>
         </div>
         <div class="produits">
-            <div class="image"> <img src="../asset/img/improduits/images2.png" alt="">
+            <div class="image"> <img src="../asset/img/images2.png" alt="">
             </div>
             <div class="p1">
                 <p>Tableau decoratif</p>
@@ -82,7 +91,7 @@
             <div class="btn"><button>Ajoute au Panier</button></div>
         </div>
         <div class="produits">
-            <div class="image"> <img src="../asset/img/improduits/images3.png" alt="">
+            <div class="image"> <img src="../asset/img/images3.png" alt="">
             </div>
             <div class="p1">
                 <p>cafetiere</p>
@@ -93,11 +102,11 @@
             <div class="p3">
                 <p>30.000 XFA</p>
             </div>
- 
+
             <div class="btn"><button>Ajoute au Panier</button></div>
         </div>
         <div class="produits">
-            <div class="image"> <img src="../asset/img/improduits/images4.png" alt="">
+            <div class="image"> <img src="../asset/img/images4.png" alt="">
             </div>
             <div class="p1">
                 <p>Jeu de trio</p>
@@ -112,7 +121,7 @@
             <div class="btn"><button>Ajoute au Panier</button></div>
         </div>
         <div class="produits">
-            <div class="image"> <img src="../asset/img/improduits/images10.png" alt="">
+            <div class="image"> <img src="../asset/img/images10.png" alt="">
             </div>
             <div class="p1">
                 <p>Pendule </p>
@@ -127,7 +136,7 @@
             <div class="btn"><button>Ajoute au Panier</button></div>
         </div>
         <div class="produits">
-            <div class="image"> <img src="../asset/img/improduits/images6.png" alt="">
+            <div class="image"> <img src="../asset/img/images6.png" alt="">
             </div>
             <div class="p1">
                 <p>Chariot de service</p>
@@ -142,7 +151,7 @@
             <div class="btn"><button>Ajoute au Panier</button></div>
         </div>
         <div class="produits">
-            <div class="image"> <img src="../asset/img/improduits/images6.png" alt="">
+            <div class="image"> <img src="../asset/img/images6.png" alt="">
             </div>
             <div class="p1">
                 <p>chaise de bureau</p>
@@ -157,7 +166,7 @@
             <div class="btn"><button>Ajoute au Panier</button></div>
         </div>
         <div class="produits">
-            <div class="image"> <img src="../asset/img/improduits/images8.png" alt="">
+            <div class="image"> <img src="../asset/img/images8.png" alt="">
             </div>
             <div class="p1">
                 <p>Thermos</p>
@@ -172,7 +181,7 @@
             <div class="btn"><button>Ajoute au Panier</button></div>
         </div>
         <div class="produits">
-            <div class="image"> <img src="../asset/img/improduits/images9.png" alt="">
+            <div class="image"> <img src="../asset/img/images9.png" alt="">
             </div>
             <div class="p1chec">
                 <p>Pendule</p>
@@ -187,9 +196,13 @@
             <div class="btn"><button>Ajoute au Panier</button></div>
         </div>
     </div>
+
+
     <footer>
-        <div class="logo">
-            <div class="contact">
+        <p class="logos">Wanda <span>Shop</span></p>
+
+
+        <div class="contact1">
                 <div class="contactphone">
                     <div class="contactlogo">
                         <p><img src="../asset/icons/iconeproduits/Vector 2.png" alt=""></p>
@@ -207,37 +220,30 @@
                         <p>Wandashop@gmail.com</p>
                     </div>
                 </div>
-            </div>
 
             <!-- <div class="icone"><img src="../asset/icons/iconeproduits/Vector3.png" alt="">
 
                 <img src="../asset/icons/iconeproduits/Vector4.png" alt="">
             </div> -->
 
-            <p class="logos">Wanda <span>Shop</span></p>
             <div class="contact">
-                <div class="contactphone">
-                    <div class="contactlogo">
-                        <p><img src="../asset/icons/iconeproduits/Vector3.png" alt=""></p>
-                    </div>
-                    <div class="phonenomber">
-                        <p>Facebook</p>
-                    </div>
+                <div class="contactlogo">
+                    <p><img src="../asset/icons/iconeproduits/Vector3.png" alt=""></p>
                 </div>
-                <div class="contactphone">
-                    <div class="contactlogo">
-                        <p>                <img src="../asset/icons/iconeproduits/Vector4.png" alt="">
-                        </p>
 
-                    </div>
-                    <div class="mail">
-                        <p>Instagrame</p>
-                    </div>
+                <div class="contactlogos">
+                    <p> <img src="../asset/icons/iconeproduits/Vector4.png" alt="">
+                    </p>
+
                 </div>
+
             </div>
         </div>
 
     </footer>
+</body>
+
+</html>
 
 </body>
 
