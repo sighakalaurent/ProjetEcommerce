@@ -73,6 +73,10 @@ span {
   padding-top: 3%;
   padding-bottom: 2%;
 }
+.imgButton{
+  border: none;
+  background: none;
+}
 #img_Rectangle {
   height: 5px;
   width: 20%;
@@ -181,7 +185,7 @@ footer span {
     justify-content: space-between;
    
     align-items: center;
-    padding: 41px 15px;
+    padding: 0px 15px;
 }
 
 .contactphone {

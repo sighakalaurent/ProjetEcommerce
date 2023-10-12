@@ -179,7 +179,10 @@ footer span {
     justify-content: space-around;
 
     align-items: center;
+<<<<<<< HEAD
     padding: 35px 0;
+=======
+>>>>>>> develop
 }
 
 .contactphone {
@@ -218,7 +221,6 @@ footer span {
 .contact .contact2 span {
     color: white;
     font-size: 25px;
-
     margin: 15px;
 }
 

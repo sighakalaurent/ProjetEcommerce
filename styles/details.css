@@ -121,8 +121,7 @@ input:nth-child(2){
     
 }
 .btn_cart input:hover{
-    background-color: #eb8f02;
-    opacity: 0.8;
+    background-color: #c57701;
 }
 .details{
     width: 70%;
@@ -164,7 +163,7 @@ footer span {
     justify-content: space-between;
 
     align-items: center;
-    padding: 41px 15px;
+    padding: 0px 15px;
 }
 
 .contactphone {
