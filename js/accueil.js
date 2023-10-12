@@ -9,6 +9,9 @@ function navigateToDetail(id){
 const basket = {
     "id" : "",
     "nom":"",
+    "categorie":"",
+    "prix":"",
+    "details":"",
     "quantity": ""
 }
 
@@ -21,14 +24,14 @@ function addToCart(productId){
 fetch('produits.json')
     .then(response => response.json().then(data => {
         products= data
-        for(let i=0; i < products.length; i++){
+        for(let i=0; i < 8; i++){
             parentDiv.innerHTML += `
             <div class="Produits">
                 <button class = "imgButton" onClick="navigateToDetail(${products[i].id})"><img id="img" src= ../asset/img/${products[i].image} alt="charset"></button>
                 <p id="titre">${products[i].nom}</p>
                 <p id="description">${products[i].categorie}</p>
                 <p id="prix"><span>${products[i].prix} XAF</span></p>
-                 <button id="btn_produits" onClick="addToCart(${products[i].id})" >Ajouter au panier</button>
+                 <button id="btn_produits" onClick="addToCart(${products[i].id})">Ajouter au panier</button>
             </div>
             `
         }
