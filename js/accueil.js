@@ -14,6 +14,8 @@ fetch('produits.json')
             </div>
             `
         }
+        const addToCartButton = document.getElementById("btn_produits");
+        addToCartButton.addEventListener("click", addBasket)
     }
 ))
 
