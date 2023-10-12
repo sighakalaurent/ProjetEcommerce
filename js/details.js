@@ -31,13 +31,6 @@ function showDetail(productId) {
   );
 }
 
+let productId = sessionStorage.getItem("productId")
 
-function getproduct() {
-    let product;
-    if (localStorage.getItem("productId") === null) {
-      product = [];
-    } else {
-      product = JSON.parse(localStorage.getItem("productId"));
-    }
-}
-showDetail(5);
+showDetail(productId);

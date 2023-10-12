@@ -73,6 +73,10 @@ span {
   padding-top: 3%;
   padding-bottom: 2%;
 }
+.imgButton{
+  border: none;
+  background: none;
+}
 #img_Rectangle {
   height: 5px;
   width: 20%;
