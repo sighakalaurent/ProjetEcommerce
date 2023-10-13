@@ -58,7 +58,7 @@ function showCart(products) {
       
     }
     
-))
+  }))
 console.log('bonjour')
 
 }
