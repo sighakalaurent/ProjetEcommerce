@@ -47,21 +47,12 @@ function showCart(products) {
             </div>
         </div>
 
-      `;
+      `};
       }
-    })
-  );
+  ));
   console.log("bonjour");
 
-        
-      ` }
-      
-    }
-    
-  }))
-console.log('bonjour')
-
-}
+}     
 let products = sessionStorage.getItem("products");
 let cart = JSON.parse(sessionStorage.getItem(products));
 showCart(products);
