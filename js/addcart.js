@@ -15,7 +15,7 @@ function getBasket() {
   }
 }
 
-function countProduct() {
+function countProduct(){
   let basket = getBasket();
   const numPanier = document.getElementById("numPanier");
   const num = basket.length;
@@ -30,13 +30,13 @@ function addBasket(product) {
     basket.push(product);
     saveBasket(basket);
   }
-  countProduct();
+  countProduct()
 }
 function removeFromBasket(id) {
   let basket = getBasket();
-  basket = basket.filter((p) => p.id != id);
+  basket = basket.filter((p) => p.id !=id);
   saveBasket(basket);
-  location.reload();
+  location.reload()
 }
 
 function changeQuantity(product, quantity) {
@@ -70,16 +70,8 @@ function getTotalPrice() {
   return total;
 }
 
-function redirectToWhatsApp() {
-  let message = "bonjour a vous j'aimerais obetnir c'est produit:";
-  let products = getBasket();
-  if (products.length > 0) {
-    for (let i = 0; i < products.length; i++) {
-      message +=
-        "- " + products[i].nom + " (quantité : " + products[i].quantity + ")";
-    }
-    let whatsappURL = "https://wa.me/+237620647560/?text=" + message;
-    window.location.href = whatsappURL;
-    clearBasket(getBasket());
-  }
+function redirectToWhatsApp(message = "bonjour a vous") {
+  let whatsappURL = "https://wa.me/+237620647560/?text=" + message;
+  window.location.href = whatsappURL;
+  clearBasket(getBasket());
 }
