@@ -1,5 +1,4 @@
 let products
-let product
 const parentDiv = document.querySelector(".container_produits")
 
 function navigateToDetail(id){
