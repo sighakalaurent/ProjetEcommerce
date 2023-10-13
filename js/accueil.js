@@ -17,6 +17,7 @@ const basket = {
     "quantity": ""
 
 }
+
 fetch('produits.json')
     .then(response => response.json().then(data => {
         products= data
