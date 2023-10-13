@@ -75,3 +75,4 @@ function redirectToWhatsApp(message = "bonjour a vous") {
   window.location.href = whatsappURL;
   clearBasket(getBasket());
 }
+     
