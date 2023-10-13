@@ -56,3 +56,7 @@ function showCart(products) {
 let products = sessionStorage.getItem("products");
 let cart = JSON.parse(sessionStorage.getItem(products));
 showCart(products);
+
+// function sendMessage(product){
+//   let message = 
+// }
