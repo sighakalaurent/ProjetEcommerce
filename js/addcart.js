@@ -32,10 +32,11 @@ function addBasket(product) {
   }
   countProduct()
 }
-function removeFromBasket(product) {
+function removeFromBasket(id) {
   let basket = getBasket();
-  basket = basket.filter((p) => p.id != product.id);
+  basket = basket.filter((p) => p.id !=id);
   saveBasket(basket);
+  location.reload()
 }
 
 function changeQuantity(product, quantity) {
