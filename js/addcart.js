@@ -74,21 +74,5 @@ function redirectToWhatsApp(message = "bonjour a vous") {
   let whatsappURL = "https://wa.me/+237620647560/?text=" + message;
   window.location.href = whatsappURL;
   clearBasket(getBasket());
-
-function redirectToWhatsApp() {
-  let message = "bonjour a vous j'aimerais obetnir c'est produit:";
-  let products = getBasket();
-  if (products.length > 0) {
-    for (let i = 0; i < products.length; i++) {
-      message +=
-        "- " + products[i].product.nom + " (quantité : " + products[i].product.quantity + ")";
-    }
-    let whatsappURL = "https://wa.me/+237620647560/?text=" + message;
-    window.location.href = whatsappURL;
-    clearBasket(getBasket());
-  }
-
-}
 }
  
-
