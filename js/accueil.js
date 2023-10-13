@@ -1,11 +1,9 @@
 let products
-let product
 const parentDiv = document.querySelector(".container_produits")
 
 function navigateToDetail(id){
     sessionStorage.setItem("productId", id)
     window.location.href = "details.html"
-    window.location.href = "cart.html"
 }
 
 const basket = {
@@ -15,8 +13,14 @@ const basket = {
     "prix":"",
     "details":"",
     "quantity": ""
-
 }
+
+function addToCart(productId){
+    basket.id = productId
+    console.log(basket)
+    addBasket(basket)
+}
+
 fetch('produits.json')
     .then(response => response.json().then(data => {
         products= data
