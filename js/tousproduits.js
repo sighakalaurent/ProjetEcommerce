@@ -33,21 +33,7 @@ fetch("produits.json").then((response) =>
         );
         valuesearch = result;
         console.log(valuesearch);
-        listproduitsR.innerHTML = "";
-  
-        for (let i = 0; i < valuesearch.length; i++) {
-          listproduitsR.innerHTML += `
-                          <div class="produits">
-                          <div class="image"> <img src="../asset/img/${valuesearch[i].image}" alt="">
-                          </div>
-                          <div class="p1"><p>${valuesearch[i].nom}</p></div>
-                          <div class="p2"> <p>${valuesearch[i].categorie}</p></div>
-                          <div class="p3">
-                              <p>${valuesearch[i].prix} XFA</p>
-                          </div>
-                          <div class="btn"><button>Ajoute au Panier</button></div>
-                          </div>`;
-        }
+        
       });
 
     toutecategorie.addEventListener("click", () => {
