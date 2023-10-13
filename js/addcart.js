@@ -76,7 +76,7 @@ function redirectToWhatsApp() {
   if (products.length > 0) {
     for (let i = 0; i < products.length; i++) {
       message +=
-        "- " + products[i].nom + " (quantité : " + products[i].quantity + ")";
+        "- " + products[i].product.nom + " (quantité : " + products[i].product.quantity + ")";
     }
     let whatsappURL = "https://wa.me/+237620647560/?text=" + message;
     window.location.href = whatsappURL;
@@ -84,10 +84,4 @@ function redirectToWhatsApp() {
   }
 }
  
-function sendMessage(){
-  let telephone = "https://wa.me/+237620647560/?text="
-  let message = "merci d avoir contacter wandashop quelle produits desirez vous?"
-  let links = "https://wa.me/+237620647560/?text=" + message 
-  window.open(links);
-  addBasket(products[i].id)
-}
+
