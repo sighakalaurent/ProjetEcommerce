@@ -45,13 +45,22 @@ function showCart(products) {
               <div class="total">total:<span>25.000XAF</span></div>
               
             </div>
-            
         </div>
+
       `;
       }
     })
   );
   console.log("bonjour");
+
+        
+      ` }
+      
+    }
+    
+))
+console.log('bonjour')
+
 }
 let products = sessionStorage.getItem("products");
 let cart = JSON.parse(sessionStorage.getItem(products));
