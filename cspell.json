@@ -1,0 +1,33 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "avec",
+        "Créer",
+        "depuis",
+        "États",
+        "exemple",
+        "l'utilisateur",
+        "numero",
+        "Numéro",
+        "personnalisé",
+        "prérempli",
+        "produit",
+        "Produit",
+        "Récupérer",
+        "rediriger",
+        "Rediriger",
+        "saisi",
+        "saisir",
+        "souhaite",
+        "suivant",
+        "téléphone",
+        "texte",
+        "Vérifier",
+        "Veuillez"
+    ],
+    "ignoreWords": [],
+    "import": []
+}
