@@ -16,7 +16,7 @@
         var message = "Je souhaite commander le produit suivant : " + nomProduit;
 
         // Créer le lien WhatsApp
-        var lienWhatsApp = "https://wa.me/" + numeroWhatsApp + "/?text=" + encodeURIComponent(message);
+        var lienWhatsApp = "https://api.whatsapp.com/send?phone=" + numeroWhatsApp + "/?text=" + encodeURIComponent(message);
 
         // Rediriger l'utilisateur vers WhatsApp
         window.location.href = lienWhatsApp;
