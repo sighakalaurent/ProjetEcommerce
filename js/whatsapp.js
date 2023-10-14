@@ -4,7 +4,7 @@
         var numeroWhatsApp = "+23756999069";
 
         // Récupérer le nom du produit depuis le champ de texte
-        var nomProduit = document.getElementById("titre").value;
+        var nomProduit = document.getElementById("").value;
 
         // Vérifier si un nom de produit a été saisi
         if (nomProduit === "") {
@@ -21,3 +21,6 @@
         // Rediriger l'utilisateur vers WhatsApp
         window.location.href = lienWhatsApp;
     }
+
+     // Ajouter un écouteur d'événement au bouton "Ajouter au panier"
+     document.getElementById("btn_produits").addEventListener("click", redirigerVersWhatsApp);

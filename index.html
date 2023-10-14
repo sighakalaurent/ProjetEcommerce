@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/accueil.css">
     <title>Document</title>
-    <script src="./js/whatsapp.js"></script>
+
 </head>         
 <body>
+    <script>
+             // JavaScript pour la redirection vers WhatsApp avec le nom du produit personnalisé
+     function redirigerVersWhatsApp() {
+        // Numéro de téléphone WhatsApp (avec code pays, par exemple +1 pour les États-Unis)
+        var numeroWhatsApp = "+23756999069";
+
+        // Récupérer le nom du produit depuis le champ de texte
+        var nomProduit = document.getElementById("titre").value;
+
+        // Vérifier si un nom de produit a été saisi
+        if (nomProduit === "") {
+            alert("Veuillez saisir le nom du produit.");
+            return;
+        }
+
+        // Message prérempli avec le nom du produit personnalisé
+        var message = "Je souhaite commander le produit suivant : " + nomProduit;
+
+        // Créer le lien WhatsApp
+        var lienWhatsApp = "https://api.whatsapp.com/send?phone=" + numeroWhatsApp + "/?text=" + encodeURIComponent(message);
+
+        // Rediriger l'utilisateur vers WhatsApp
+        window.location.href = lienWhatsApp;
+    }
+
+     // Ajouter un écouteur d'événement au bouton "Ajouter au panier"
+     document.getElementById("btn_produits").addEventListener("click", redirigerVersWhatsApp);
+    </script>
     <!--DEBUT NAV BAR-->
     <header>
         <nav>
@@ -48,84 +76,86 @@
         <div class="container_produits">
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/images__4_-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200.000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/1293238f0f697b0449da83e1f68dbeb1-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/2000-ml-flacon-vide-bouteille-d-eau-isol-fiole-en-acier-inoxydable-thermique-Portable-grande-capacit-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/H329dcdc0b6b746a4a0782d868353ab8fj-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/H329dcdc0b6b746a4a0782d868353ab8fj-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/tokyo-cuir-veritable-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/images__4_-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
+
+
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/1293238f0f697b0449da83e1f68dbeb1-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/images__4_-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/1293238f0f697b0449da83e1f68dbeb1-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/2000-ml-flacon-vide-bouteille-d-eau-isol-fiole-en-acier-inoxydable-thermique-Portable-grande-capacit-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
             </div>
             <div class="Produits">
                 <a href="details.html"><img id="img" src="../asset/img/tokyo-cuir-veritable-removebg-preview 1.png" alt="charset"></a>
-                <p id="titre">Chariot de services</p>
+                <input type="text" id="titre" placeholder="Chariot de services" value="Chariot de services">
                 <p id="description">Ameublements </p>
                 <p id="prix"><span>200000 XAF</span></p>
                 <button id="btn_produits" onclick="redirigerVersWhatsApp()">Ajouter au panier</button>
