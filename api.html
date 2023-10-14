@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Votre Page Web</title>
+</head>
+<body>
+    <button id="ajouterAuPanier">Ajouter au panier</button>
+
+    <script>
+        // Lorsque l'utilisateur clique sur "Ajouter au panier"
+        document.getElementById("ajouterAuPanier").addEventListener("click", function() {
+            // Numéro de téléphone WhatsApp (avec code pays, par exemple +1 pour les États-Unis)
+            var numeroWhatsApp = "NUMERO_DE_TELEPHONE";
+
+            // Message prérempli
+            var message = "Je souhaite commander le produit suivant : [Nom du produit]";
+
+            // Créer le lien WhatsApp avec l'API WhatsApp Business
+            var lienWhatsApp = "https://api.whatsapp.com/send?phone=" + numeroWhatsApp + "&text=" + encodeURIComponent(message);
+
+            // Rediriger l'utilisateur vers WhatsApp
+            window.location.href = lienWhatsApp;
+        });
+    </script>
+</body>
+</html>
