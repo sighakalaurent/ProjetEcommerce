@@ -27,7 +27,8 @@ fetch('produits.json')
         for(let i=0; i < 8; i++){
             parentDiv.innerHTML += `
             <div class="Produits">
-                <button class = "imgButton" onClick="navigateToDetail(${products[i].id})"><img id="img" src= ../asset/img/${products[i].image} alt="charset"></button>
+                <button class = "imgButton" onClick="navigateToDetail(${products[i].id})">
+                <img id="img" src= ../asset/img/${products[i].image} alt="charset"></button>
                 <p id="titre">${products[i].nom}</p>
                 <p id="description">${products[i].categorie}</p>
                 <p id="prix"><span>${products[i].prix} XAF</span></p>
