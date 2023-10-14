@@ -32,5 +32,4 @@ function showDetail(productId) {
 }
 
 let productId = sessionStorage.getItem("productId")
-
 showDetail(productId);

@@ -15,25 +15,28 @@ function getBasket() {
   }
 }
 
-function addBasket(product) {
+function countProduct(){
   let basket = getBasket();
-  let foundProduct = basket.find((p) => p.id == product.id);
-  if (foundProduct != undefined) {
-    foundProduct.quantity++;
-  } else {
-    product.quantity = 1;
-    basket.push(product);
-  }
-  saveBasket(basket);
   const numPanier = document.getElementById("numPanier");
   const num = basket.length;
   numPanier.textContent = num;
 }
 
-function removeFromBasket(product) {
+function addBasket(product) {
   let basket = getBasket();
-  basket = basket.filter((p) => p.id != product.id);
+  let foundProduct = basket.find((p) => p.id == product.id);
+  if (foundProduct == undefined) {
+    product.quantity = 1;
+    basket.push(product);
+    saveBasket(basket);
+  }
+  countProduct()
+}
+function removeFromBasket(id) {
+  let basket = getBasket();
+  basket = basket.filter((p) => p.id !=id);
   saveBasket(basket);
+  location.reload()
 }
 
 function changeQuantity(product, quantity) {
@@ -66,3 +69,10 @@ function getTotalPrice() {
   }
   return total;
 }
+
+function redirectToWhatsApp(message = "bonjour a vous") {
+  let whatsappURL = "https://wa.me/+237620647560/?text=" + message;
+  window.location.href = whatsappURL;
+  clearBasket(getBasket());
+}
+     

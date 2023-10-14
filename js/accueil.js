@@ -1,6 +1,22 @@
 let products
 const parentDiv = document.querySelector(".container_produits")
 
+function countProduct(){
+    let basket = localStorage.getItem("basket");
+    let products
+  if (basket === null) {
+    products= [];
+  } else {
+    products = JSON.parse(basket);
+  }
+
+  const numPanier = document.getElementById("numPanier");
+  const num = products.length;
+  numPanier.textContent = num;
+}
+
+countProduct()
+
 function navigateToDetail(id){
     sessionStorage.setItem("productId", id)
     window.location.href = "details.html"
@@ -8,10 +24,6 @@ function navigateToDetail(id){
 
 const basket = {
     "id" : "",
-    "nom":"",
-    "categorie":"",
-    "prix":"",
-    "details":"",
     "quantity": ""
 }
 

@@ -72,10 +72,7 @@ span {
 .cart_picture img {
   width: 100%;
 }
-.cart_layout {
-  /* padding-top: 80px; */
-  /* padding-left:20px; */
-}
+
 
 .name_products {
   font-size: 20px;
@@ -161,10 +158,11 @@ label {
   border: none;
   color: #ffff;
   font-size: 15px;
-  padding: 10px;
+  padding: 15px;
   font-weight: bold;
   transition: 1.1s;
-  width: 100%;
+  width: 20%;
+  position: fixed;
 }
 .btn_commandez input:hover {
   background-color: #eb8f02;
