@@ -6,26 +6,73 @@
     <link rel="stylesheet" href="styles/cart.css" />
     <title>Cart</title>
     <script src="./js/cart.js" defer></script>
-    <script src="./js/addcart.js" defer></script>
   </head>
   <body>
+
     <!--DEBUT NAV BAR-->
     <header>
       <nav>
-        <div class="logo">Wanda<span>Shop</span></div>
-        <div class="onglet">
-          <ul>
-            <a id="liens" href="index.html"><li>Accueil</li></a>
-            <a id="liens" href="tousproduits.html"><li>Produits</li></a>
-            <a class="cart" href="cart.html"
-              ><li><img src="../asset/icons/basket.svg" alt="Panier" /></li
-            ></a>
-          </ul>
-        </div>
+          <div class="logo">Wanda<span>Shop</span></div>
+          <div class="onglet">
+              <ul>
+                <a id="liens" href="index.html"><li>Accueil</li></a>
+                <a id="liens" href="tousproduits.html"><li>Produits</li></a> 
+                 <a  class="cart" href="cart.html"><li><img src="../asset/icons/basket.svg" alt="Panier"></li></a> 
+              </ul>
+          </div>
       </nav>
-    </header>
-    <!--FIN NAV BAR-->
+  </header>
+  <!--FIN NAV BAR-->
     <div class="container_cart">
+      <h1>Mon panier</h1>
+    <div class="cart_content">
+    <div class="cart_picture">
+        <img
+          src="../asset/tokyo-cuir-veritable-removebg-preview.png"
+          alt=""
+        />
+      </div>
+        <div class="cart_layout">
+          <div class="name_products">Chaise de bureau <span><img src="../asset/delete-outline.svg" alt=""></span></div>
+          <div class="price_products">25.000XAF</div>
+          <div class="category_products">Ameublement</div>
+          <div class="quantite_product">
+            <label for="">Quantite:</label>
+            <input type="button" value="-" />
+            <input type="button" value="1" />
+            <input type="button" value="+" />
+          </div>
+          <div class="sous_total">Sous-total:<span>25.000XAF</span></div>
+          <div class="total">total:<span>25.000XAF</span></div>
+          <div class="btn_commandez">
+            <input type="button" value="Commandez" />
+          </div> 
+        </div>
+        
+      </div>
+   <div class="cart_content">
+    <div class="cart_picture">
+        <img
+          src="../asset/tokyo-cuir-veritable-removebg-preview.png"
+          alt=""
+        />
+      </div>
+        <div class="cart_layout">
+          <div class="name_products">Chaise de bureau <span><img src="../asset/delete-outline.svg" alt=""></span></div>
+          <div class="price_products">25.000XAF</div>
+          <div class="category_products">Ameublement</div>
+          <div class="quantite_product">
+            <label for="">Quantite:</label>
+            <input type="button" value="-" />
+            <input type="button" value="1" />
+            <input type="button" value="+" />
+          </div>
+          <div class="sous_total">Sous-total:<span>25.000XAF</span></div>
+          <div class="total">total:<span>25.000XAF</span></div>
+          <div class="btn_commandez">
+            <input type="button" value="Commandez" />
+          </div> 
+        </div>
       <!-- <h1>Mon panier</h1> -->
 
       
@@ -34,56 +81,55 @@
         <input type="button" value="Commandez" onclick="redirectToWhatsApp()">
         </div>
 
+
     </div>
 
     <!-- <footer>
       <div class="logo">
-        <div class="contact">
-          <div class="contactphone">
-            <div class="contactlogo">
-              <p>
-                <img src="../asset/icons/iconeproduits/Vector 2.png" alt="" />
-              </p>
-            </div>
-            <div class="phonenomber">
-              <p>+237656903148</p>
-            </div>
+          <div class="contact">
+              <div class="contactphone">
+                  <div class="contactlogo">
+                      <p><img src="../asset/icons/iconeproduits/Vector 2.png" alt=""></p>
+                  </div>
+                  <div class="phonenomber">
+                      <p>+237656903148</p>
+                  </div>
+              </div>
+              <div class="contactphone">
+                  <div class="contactlogo">
+                      <p><img src="../asset/icons/iconeproduits/Vector1.png" alt=""></p>
+
+                  </div>
+                  <div class="mail">
+                      <p>Wandashop@gmail.com</p>
+                  </div>
+              </div>
           </div>
-          <div class="contactphone">
-            <div class="contactlogo">
-              <p>
-                <img src="../asset/icons/iconeproduits/Vector1.png" alt="" />
-              </p>
-            </div>
-            <div class="mail">
-              <p>Wandashop@gmail.com</p>
-            </div>
+          <p class="logos">Wanda <span>Shop</span></p>
+          <div class="contact">
+              <div class="contactphone">
+                  <div class="contactlogo">
+                      <p><img src="../asset/icons/iconeproduits/Vector3.png" alt=""></p>
+                  </div>
+                  <div class="phonenomber">
+                      <p>Facebook</p>
+                  </div>
+              </div>
+              <div class="contactphone">
+                  <div class="contactlogo">
+                      <p>                <img src="../asset/icons/iconeproduits/Vector4.png" alt="">
+                      </p>
+
+                  </div>
+                  <div class="mail">
+                      <p>Instagrame</p>
+                  </div>
+              </div>
           </div>
-        </div>
-        <p class="logos">Wanda <span>Shop</span></p>
-        <div class="contact">
-          <div class="contactphone">
-            <div class="contactlogo">
-              <p>
-                <img src="../asset/icons/iconeproduits/Vector3.png" alt="" />
-              </p>
-            </div>
-            <div class="phonenomber">
-              <p>Facebook</p>
-            </div>
-          </div>
-          <div class="contactphone">
-            <div class="contactlogo">
-              <p>
-                <img src="../asset/icons/iconeproduits/Vector4.png" alt="" />
-              </p>
-            </div>
-            <div class="mail">
-              <p>Instagrame</p>
-            </div>
-          </div>
-        </div>
       </div>
+  </footer>
+
     </footer> -->
+
   </body>
 </html>
