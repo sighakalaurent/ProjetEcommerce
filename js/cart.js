@@ -1,13 +1,3 @@
-
-fetch('produits.json')
-.then(response => console.log(response.json()))
-.then(data => {
-console.log(data);
-});
-let cart_picture = document.querySelector("cart_picture")
-let name_products = document.querySelector("name_products")
-let price_products = document.querySelector("price_products")
-let category_products = document.querySelector("category_products")
 let cartDiv = document.querySelector(".container_cart");
 
 function getProductsFromLocalStorage(products) {
@@ -23,24 +13,19 @@ function getProductsFromLocalStorage(products) {
   for (let index = 0; index < cardInfo.length; index++) {
     finalProduct.push({
       products: products.filter((p) => p.id == cardInfo[index].id).shift(),
-      quantity: cardInfo[index].quantity,
+      quantity: cardInfo[index].quantity
     });
   }
 
-  return finalProduct;
+  return finalProduct
+
 }
 
-function showCart() {
-  let products;
+function showCart(products) {
   fetch("produits.json").then((response) =>
     response.json().then((data) => {
+      
       products = getProductsFromLocalStorage(data);
-      let result = "";
-      for (i = 0; i < products.length; i++) {
-        result += ` ${products[i].products.nom} : 1, prix : ${products[i].products.prix}\n`;
-      }
-      message = `Bonjour, je souhaite commander le produit suivant:\n ${result} \n.Veuillez confirmer ma commande s'il vous plait`;
-      console.log(message);
       for (let i = 0; i < products.length; i++) {
         cartDiv.innerHTML += `<div class="cart_content">
         <div class="cart_picture">
@@ -62,16 +47,16 @@ function showCart() {
             </div>
         </div>
 
-      `;
+      `};
       }
-    })
-  );
-}
+  ));
+  console.log("bonjour");
 
-let message ;
+}     
+let products = sessionStorage.getItem("products");
+let cart = JSON.parse(sessionStorage.getItem(products));
+showCart(products);
 
-showCart();
-function sendMessage(){
-  redirectToWhatsApp(message)
-}
-//redirectToWhatsApp();
+// function sendMessage(product){
+//   let message = 
+// }
