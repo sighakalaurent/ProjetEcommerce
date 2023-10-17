@@ -10,19 +10,38 @@ const Decorations = document.getElementById("decoration");
 const Vaisselles = document.getElementById("vaisselles");
 
 
+function countProduct(){
+  let basket = localStorage.getItem("basket");
+  let products
+if (basket === null) {
+  products= [];
+} else {
+  products = JSON.parse(basket);
+}
+
+
+const numPanier = document.getElementById("numPanier");
+const num = products.length;
+numPanier.textContent = num;
+}
+
+countProduct()
+
+function navigateToDetail(id){
+  sessionStorage.setItem("productId", id)
+  window.location.href = "details.html"
+}
+
+const basket = {
+  "id" : "",
+  "quantity": ""
+}
+
+
 function navigateToDetail(id) {
   sessionStorage.setItem("productId", id);
   window.location.href = "details.html";
 }
-
-const basket = {
-  id: "",
-  nom: "",
-  categorie: "",
-  prix: "",
-  details: "",
-  quantity: "",
-};
 
 function addToCart(productId) {
   basket.id = productId;
