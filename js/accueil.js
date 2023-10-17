@@ -10,6 +10,7 @@ function countProduct(){
     products = JSON.parse(basket);
   }
 
+
   const numPanier = document.getElementById("numPanier");
   const num = products.length;
   numPanier.textContent = num;

@@ -1,11 +1,14 @@
 // recuperation des donnees
 
+
+
 const searchInput = document.getElementById("search");
 const listproduitsR = document.querySelector(".tousProduits");
 const toutecategorie = document.getElementById("boutontous");
 const ameublements = document.getElementById("ameublement");
 const Decorations = document.getElementById("decoration");
 const Vaisselles = document.getElementById("vaisselles");
+
 
 function navigateToDetail(id) {
   sessionStorage.setItem("productId", id);
@@ -47,7 +50,6 @@ fetch("produits.json").then((response) =>
     }
 
     searchInput.addEventListener("keyup", () => {
-<<<<<<< HEAD
       const input = searchInput.value;
       console.log(input);
       const result = products.filter((produit) =>
@@ -71,17 +73,16 @@ fetch("produits.json").then((response) =>
         </div>`;
       }
     });
-=======
-        const input = searchInput.value;
-        console.log(input);
-        const result = products.filter((produit) =>
-          produit.nom.toLowerCase().includes(input.toLowerCase())
-        );
-        valuesearch = result;
-        console.log(valuesearch);
+
+      //   const input = searchInput.value;
+      //   console.log(input);
+      //   const result = products.filter((produit) =>
+      //     produit.nom.toLowerCase().includes(input.toLowerCase())
+      //   );
+      //   valuesearch = result;
+      //   console.log(valuesearch);
         
-      });
->>>>>>> develop
+      // });
 
     toutecategorie.addEventListener("click", () => {
       listproduitsR.innerHTML = "";
@@ -166,53 +167,6 @@ fetch("produits.json").then((response) =>
         </div>`;
       }
     });
-  })
-);
-<<<<<<< HEAD
-=======
+  }))
 
-// const showmore = document.getElementById('btn')
-// const datajson = fetch('produits.json').then(response => response.json().then(data => {
-//     products = data
 
-//     for (let i = 0; i < products.length; i++) {
-//         listproduitsR.innerHTML += `
-//             <div class="produits">
-//             <div class="image"> <img src="../asset/img/${products[i].image}" alt="">
-//             </div>
-//             <div class="p1"><p>${products[i].nom}</p></div>
-//             <div class="p2"> <p>${products[i].categorie}</p></div>
-//             <div class="p3">
-//                 <p>${products[i].prix} XFA</p>
-//             </div>
-//             <div class="btn"><button>Ajoute au Panier</button></div>
-//             </div>`
-
-//     //     /*   if (valueproduit.includes(searchInput)) {
-//     //           products.style.display = 'block'
-//     //       } else {
-//     //           products.style.display = 'none'
-//     //       }        */
-//     }
-
-//  }
-// ))
-// let inputData = ""
-// async function searchProduct() {
-//     inputData = searchInput.value;
-//     const products = `
-//     <div class="produits">
-//     <div class="image"> <img src="../asset/img/${products.image}" alt="">
-//     </div>
-//     <div class="p1"><p>${products.nom.inputData}</p></div>
-//     <div class="p2"> <p>${products.categorie}</p></div>
-//     <div class="p3">
-//         <p>${products.prix} XFA</p>
-//     </div>
-//     <div class="btn"><button>Ajoute au Panier</button></div>
-//     </div>`
-
-//     if ()
-
-// }
->>>>>>> develop

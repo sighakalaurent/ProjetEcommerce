@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 fetch('produits.json')
 .then(response => console.log(response.json()))
 .then(data => {
@@ -10,7 +10,7 @@ let price_products = document.querySelector("price_products")
 let category_products = document.querySelector("category_products")
 
 let cart = document.querySelector("cart")
-=======
+
 let cartDiv = document.querySelector(".container_cart");
 
 function getProductsFromLocalStorage(products) {
@@ -69,4 +69,3 @@ function showCart(products) {
 let products = sessionStorage.getItem("products");
 let cart = JSON.parse(sessionStorage.getItem(products));
 showCart(products);
->>>>>>> develop
