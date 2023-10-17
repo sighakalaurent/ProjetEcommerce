@@ -51,12 +51,15 @@ function showCart(products) {
       }
   ));
   console.log("bonjour");
+}  
 
-}     
 let products = sessionStorage.getItem("products");
 let cart = JSON.parse(sessionStorage.getItem(products));
 showCart(products);
 
-// function sendMessage(product){
-//   let message = 
-// }
+function sendMessage(product){
+  let message = "quel produit desirez-vous?" + product.quantity + product.nom
+  for(let i = 0; i < length.product ; i++){
+  let result = message 
+  }
+}
