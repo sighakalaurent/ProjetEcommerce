@@ -70,7 +70,7 @@ function getTotalPrice() {
   return total;
 }
 
-function redirectToWhatsApp(message = "bonjour a vous") {
+function redirectToWhatsApp(message = "bonjour a vous!") {
   let whatsappURL = "https://wa.me/+237620647560/?text=" + message;
   window.location.href = whatsappURL;
   clearBasket(getBasket());

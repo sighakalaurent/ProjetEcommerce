@@ -13,19 +13,24 @@ function getProductsFromLocalStorage(products) {
   for (let index = 0; index < cardInfo.length; index++) {
     finalProduct.push({
       products: products.filter((p) => p.id == cardInfo[index].id).shift(),
-      quantity: cardInfo[index].quantity
+      quantity: cardInfo[index].quantity,
     });
   }
 
-  return finalProduct
-
+  return finalProduct;
 }
 
-function showCart(products) {
+function showCart() {
+  let products;
   fetch("produits.json").then((response) =>
     response.json().then((data) => {
-      
       products = getProductsFromLocalStorage(data);
+      let result = "";
+      for (i = 0; i < products.length; i++) {
+        result += ` ${products[i].products.nom} : 1, prix : ${products[i].products.prix}\n`;
+      }
+      message = `Bonjour, je souhaite commander le produit suivant:\n ${result} \n.Veuillez confirmer ma commande s'il vous plait`;
+      console.log(message);
       for (let i = 0; i < products.length; i++) {
         cartDiv.innerHTML += `<div class="cart_content">
         <div class="cart_picture">
@@ -47,19 +52,16 @@ function showCart(products) {
             </div>
         </div>
 
-      `};
+      `;
       }
-  ));
-  console.log("bonjour");
-}  
-
-let products = sessionStorage.getItem("products");
-let cart = JSON.parse(sessionStorage.getItem(products));
-showCart(products);
-
-function sendMessage(product){
-  let message = "quel produit desirez-vous?" + product.quantity + product.nom
-  for(let i = 0; i < length.product ; i++){
-  let result = message 
-  }
+    })
+  );
 }
+
+let message ;
+
+showCart();
+function sendMessage(){
+  redirectToWhatsApp(message)
+}
+//redirectToWhatsApp();
