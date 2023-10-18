@@ -1,13 +1,14 @@
 // recuperation des donnees
 
 
-
 const searchInput = document.getElementById("search");
 const listproduitsR = document.querySelector(".tousProduits");
 const toutecategorie = document.getElementById("boutontous");
 const ameublements = document.getElementById("ameublement");
 const Decorations = document.getElementById("decoration");
 const Vaisselles = document.getElementById("vaisselles");
+
+
 
 
 function countProduct(){
